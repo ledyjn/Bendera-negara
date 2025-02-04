@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Informasi Negara</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1>Informasi Negara</h1>
+      <ul>
+        <li><a href="#" onclick="getCountries()">List Negara</a></li>
+        <li><a href="#" onclick="getContinents()">List Benua</a></li>
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Cari Negara..."
+          onkeyup="searchCountries()"
+        />
+        <p>au</p>
+      </ul>
+    </nav>
+
+    <div id="content">
+      <h2>Daftar Negara</h2>
+      <div id="countries-list" class="grid-container"></div>
+    </div>
+  </body>
+</html>
